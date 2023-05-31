@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    /* overflow: hidden; */ /* Gjemmer vertikal scrollbar */
+}
+
+
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1{
+  text-align: center;
+  font-size: 60px;
+  padding: 30px;
+  background-color:white;
+  border-radius: 10%;
+
+  position:absolute;
+}
+
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+
+p{
+  text-align: center;
+  line-height: 25px;
+  color: rgb(63, 63, 63);
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+
+/* ============================== */
+header{
+  background-color: #D6E8DB;
+  display: flex;
+  justify-content: space-between;
+} 
+
+#topnav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unav{
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  padding-left: 10px;
+}
+
+ /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: /* 111 */ #393f35; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #9b9b9b;
+}
+
+/*Hamburger  */
+#hamburger{
+  margin: 20px;
+  display: grid;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#hamburger_1{
+  width: 45px;
+  height: 4px;
+  border-radius: 10%;
+  background-color: white;
+  
+  
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-property: rotate;
+  transform-origin: left;
+}
+
+#hamburger_2{
+  width: 45px;
+  height: 4px;
+  border-radius: 10%;
+  background-color: white;
+  
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+}
+
+#hamburger_3{
+  width: 45px;
+  height: 4px;
+  border-radius: 10%;
+  background-color: white;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-property: rotate;
+  transform-origin: left;
+}
+/* /hamburger */
+
+
+#main {
+  transition: padding-right .5s;
+}
+
+/* ======================== Mid ===================== */
+
+#mid{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mid_o h3{
+  text-align: center;
+  padding: 70px;
+  font-size: 25px;
+}
+
+#mid_u{
+  padding: 20px;
+}
+
+
+#o_banner{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: #FFF8DE;
+  padding: 20px;
+  height: 300px;
+  border: 3px double #99A98F;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  text-decoration: none;
+  background-color: #D6E8DB;
+  width: 20%;
+  padding: 10px;
+  border-radius: 20%;
+  
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.banner p{
+  font-size: 25px;
+  margin: 10px;
+}
+
+.banner:hover{
+  width: 22%;
+  background-color: rgba(179, 194, 183, 0.706)
+}
+
+#marihuana_ikon{
+  transform-origin: bottom;
+}
+
+.banner:hover #marihuana_ikon{
+  animation: wave ease-in-out 0.7s infinite alternate;
+
+  animation-iteration-count: 2.5;
+}
+
+#alkohol_ikon{
+  transform-origin: bottom;
+}
+
+.banner:hover #alkohol_ikon{
+  animation: fall ease-in 1.5s;
+
+  animation-iteration-count: 1;
+}
+
+
+.banner:hover #kokain_ikon{
+  /* Starter risteanimasjonen og gjør at den varer i satt tid */
+  animation: shake 0.5s;
+  
+  /* Antall ganger animasjonen skal kjøre, kan alternativt være infinite */
+  animation-iteration-count: 2;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes wave {
+0% { transform: rotate(10deg);}
+100% { transform: rotate(-10deg);}
+}
+
+@keyframes fall {
+ 0% { transform: rotate(0deg);}
+ 35% { transform: rotate(80deg);}
+ 90% { transform: rotate(80deg);}
+ 100% { transform: rotate(0deg)}
+}
+
+
+
+.banner p{
+  padding: 10px;
+
+}
+
+.banner img{
+  width: 100px;
+}
+
+.m_strek{
+  border-right: 1.5px solid black;
+}
+
+
+
+/* ======================== /Mid ==================== */
+
+
+
+/* ======================== Footer ====================*/
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  height: 220px;
+  padding: 20px;
+  background-color: #D6E8DB;
+}
+
+
+.footer_innhold{
+  display: grid;
+  justify-content: center;
+  
+  
+}
+
+.u_footer li{
+  padding: 10px;
+  list-style: none;
+  margin: auto;
+}
+
+
+.understrek{
+  background-color: white;
+  height: 1px;
+  width: 70%;
+  margin: auto;
+  border-radius: 20%;
+  
+}
+
+.footer_2{
+  width: 100%;
+  height: 100px;
+  background-color: #D6E8DB;
+  display: grid;
+  
+}
+
+.over_footer{
+  background-color: #D6E8DB;
+}
+
+.u_footer > p{
+  font-size: large;
+  font-weight: bold;
+}
+
+.u_footer a{
+  margin: auto;
+  color: black;
+}
+
+.footer_u_innhold{
+  display: grid;
+  justify-content: center;
+}
+
+#nadderud_bilde{
+  width: 200px;
+  padding: 1px;
+  margin: auto;
+}
+
+.u_footer_2{
+  padding: 30px;
+}
+/* ================= /Footer ============== */
+
+
+
+/* ================== @Media =============== */
+
+@media (max-width:750px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {font-size: 20px;
+  }
+}
+
+@media (max-width: 550px){
+
+      .over_footer{
+         height: 600px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+
+     .footer{
+         height: fit-content;
+         display: flex;
+         flex-direction: column;
+         padding-bottom: 100px;
+         flex-grow: 4;
+   }
+
+  #o_banner{
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .banner{
+    margin: 10px;
+    width: 60%;
+  }
+
+  .banner:hover{
+    width: 70%;
+  }
+ }
+
+@media (max-width: 470px){
+  header{
+    flex-direction: column;
+  }
+
+  .unav{
+    display: flex;
+    justify-content: center;
+  }
+}

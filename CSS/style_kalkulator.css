@@ -1,0 +1,241 @@
+
+
+/* ========= Kalkulator dropdown */
+
+.o_kilder_dropdown{
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+}
+
+.kilder_dropdown{
+    width: 50%;
+}
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    width: 100%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #FFF8DE;
+  }
+
+  .kilder_dropdown p{
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .kilder_dropdown ul{
+    padding: 20px;
+  }
+
+  .kilder_dropdown li{
+    font-size: 20px;
+  }
+
+.kilder_dropdown a{
+  color: black;
+}
+
+
+
+/* =========== /Kalkulator dropdown ============*/
+
+
+
+/* ============= Enhetskalkulator ================*/
+        .input_felt{
+            width: 450px;
+        }
+        .input_felt > div{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .container, #submit, #clear {
+          display: block;
+          width: 400px;
+          margin: 100px auto 0;
+        }
+        
+        h1, h2, h3, p, #result {
+          text-align: center;
+          font-family: helvetica, sans-serif;
+        }
+        
+        
+        p{
+          font-size: 18px;
+          font-family: helvetica, sans-serif;
+        }
+        
+        input {
+          font-size: 18px;
+          line-height: 14px;
+          height: 14px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          background: #fff;
+          border-radius: 6px;
+          font-family: helvetica, sans-serif;
+          color: #888;
+        }
+        
+        #submit, #clear {
+          border-radius: 12px;
+          outline-style: none;
+          outline-color: none;
+          padding: 5px;
+          margin: 3px;
+        }
+        
+        #submit {
+          background-color: green;
+          color: white;
+        }
+        
+        #clear {
+          background-color: red;
+          color: white;
+        }
+
+
+
+
+        .container, #submit, #clear {
+          display: block;
+          width: 400px;
+          margin: 100px auto 0;
+        }
+        
+        h1, h2, h3, p, #result {
+          text-align: center;
+          font-family: helvetica, sans-serif;
+        }
+        
+        
+        p{
+          font-size: 18px;
+          font-family: helvetica, sans-serif;
+        }
+        
+        input {
+          font-size: 18px;
+          line-height: 14px;
+          height: 14px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          background: #fff;
+          border-radius: 6px;
+          font-family: helvetica, sans-serif;
+          color: #888;
+        }
+        
+        #submit, #clear {
+          border-radius: 12px;
+          outline-style: none;
+          outline-color: none;
+          padding: 5px;
+          margin: 3px;
+        }
+        
+        #submit {
+          background-color: green;
+          color: white;
+        }
+        
+        #clear {
+          background-color: red;
+          color: white;
+        }
+        
+
+
+        /* ============== /Enhetskalkulator ================ */
+
+
+
+/* ================== @Media =============== */
+
+@media (max-width:850px){
+  .kilder_dropdown{
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width:750px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {font-size: 20px;
+    }
+}
+
+@media (max-width: 550px){
+
+      .over_footer{
+         height: 600px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+        }
+        
+        .footer{
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1000px;
+            flex-grow: 4;
+        }
+        
+        .input_felt > div{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+    
+        .input_felt{
+            width: auto;
+        }
+    
+        .svar_felt{
+            width: 200px;
+        }
+        
+    }
+
+

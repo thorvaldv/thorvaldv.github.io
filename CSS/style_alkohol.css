@@ -1,0 +1,253 @@
+body{
+  overflow-x: hidden;
+}
+
+#mid_ff{
+    height: 270px;
+    background-color: #C1D0B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff{
+    height: 180px;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF8DE;
+
+    display:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ff h3{
+    width: fit-content;
+}
+
+#ff_top{
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes slide-from-left {
+    from {
+        left: 150%;
+        transform: translateX(-50%);
+    }
+    to {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes hide-to-right{
+    from {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      to {
+        left: 150%;
+    transform: translateX(-50%);
+      }
+  }
+  
+
+  .slide-out {
+    animation-name: hide-to-right;
+    animation-duration: 2s;
+  }
+
+  .slide-in {
+    animation-name: slide-from-left;
+    animation-duration: 2s;
+  }
+
+  
+  #mid_o{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #mid_o h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  #intro h2{
+    font-style: italic;
+    background-color: #99A98F;
+    padding: 10px;
+  }
+
+  #o_content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+  }
+
+  #tekstboks{
+    width: 50%;
+    border-right: 2px solid black;
+    padding: 10px;
+    /* margin: 20px; */
+  }
+
+  #statistikk{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    /* margin: 20px; */
+  }
+
+  #statistikk > p{
+    padding: 10px;
+    font-weight: bolder
+  }
+
+  #andel{
+    border: 2px solid black;
+    background-color: grey;
+  }
+
+  #andel p{
+    background-color:rgb(241, 166, 52);
+    color: black;
+    width: 50%;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+  .risiko_boks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #FFF8DE;
+
+    padding: 50px;
+    margin: 20px;
+  }
+
+
+  .risiko_tekst{
+    justify-content: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.risiko_tekst p{
+  color: rgba(0, 0, 0, 0);
+  font-size: 17px;
+  text-align: left;
+  height: fit-content;
+  border-right: 2px solid black;
+ 
+
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+.risiko_tekst h2{
+font-size: 30px;
+position: absolute;
+
+
+transition-property: color;
+transition-duration: 200ms;
+transition-timing-function: ease-in;
+}
+
+
+.risiko_boks:hover .risiko_tekst p{
+  color: rgba(0, 0, 0, 1);
+}
+
+
+.risiko_boks:hover .risiko_tekst h2{
+  color: rgba(0, 0, 0, 0);
+}
+
+.side_ikon{
+  width: 100px;
+  padding: 10px;
+}
+
+.ant_ikon{
+  width: 50%;
+}
+
+
+
+
+@media (max-width: 630px){
+  #mid_o{
+    flex-direction: column;
+    align-items: center;
+  }
+  .ff{
+    width: 80%;
+  }
+  #thc_struktur{
+    width: 250px;
+  }
+
+
+}
+
+  @media (max-width: 550px){
+    #content{
+      flex-direction: column;
+    }
+    #tekstboks{
+      border-right: none;
+      border-bottom: 2px solid black;
+    }
+    #tekstboks p{
+      padding-bottom: 20px;
+    }
+    #statistikk{
+      width: fit-content;
+    }
+    #o_content{
+      flex-direction: column;
+    }
+    .risiko_boks{
+      flex-direction: column;
+    }
+    .risiko_tekst p{
+      border-right: none;
+      border-bottom: 2px solid black;
+    }
+    .ant_ikon{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}

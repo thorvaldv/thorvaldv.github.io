@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Informasjonsteknologi 1/innleveringsprosjekt_vår23/Bilder/Ikoner/RusKunnskap-ikon.svg">
+    <link rel="stylesheet" href="../CSS/style_kalkulator.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <title>Ruskunnskap</title>
+</head>
+<body id="main">
+    <header>
+
+        <div id="topnav">
+            <a href="index.html" id="logo"><img src="../Bilder/Ikoner/RusKunnskap_logo.svg" alt="Ruskunnskap logo"></a>
+        </div>
+
+
+        <div class="unav">
+
+
+            <nav>
+                <span onclick="openNav()">
+                <button id="hamburger" class="navbar_lenke">
+                    <div id="hamburger_1"></div>
+                    <div id="hamburger_2"></div>
+                    <div id="hamburger_3"></div>
+                </button>
+                </span>
+ 
+            </nav>
+        </div>
+
+ </header>
+
+ <div id="mySidenav" class="sidenav">
+    <div class="dropdown-menu">
+        <ul class="dropdown_ul"> 
+            <li><a href="alkohol.html" id="alkohol_a">Alkohol</a></li>
+            <li><a href="marihuana.html" id="marihuana_a">Marihuana</a></li>
+            <li><a href="kokain.html" id="kokain_a">Kokain</a></li>
+            <li><a href="kalkulatorer.html" id="promille_a">Kalkulatorer</a></li>
+        </ul>
+    </div>
+  </div>
+
+ 
+ <section id="mid">
+    <div id="mid_o">
+        <h3>Her er noen kalkulatorer som kan være nyttige</h3>
+    </div>
+ 
+    <div class="o_kilder_dropdown">
+        <div class="kilder_dropdown">
+        
+                    <p>For å regne ut promille:</p>
+        
+            <button class="collapsible">Promillekalkulator</button>
+            <div class="content">
+                <h1>Promillekalkulator</h1>
+
+                <div class="container">
+
+                    <h3>Din vekt</h3>
+        
+                    <p>
+                        <label for="vekt">Vekt</label>
+                        <input id="vekt" type="text" value="">
+                    </p> 
+                    <br>
+        
+                    <h3>Hvor mange enheter har du drukket?</h3>
+        
+                    <p>
+                        <label for="øl">Øl</label>
+                        <input id="øl" type="text" value="">
+                    </p> 
+                    <br>
+        
+                    <p>
+                        <label for="vin">Vin</label>
+                        <input id="vin" type="text" value="">
+                    </p> 
+                    <br>
+        
+                    <p>
+                        <label for="shot">Shot</label>
+                        <input id="shot" type="text" value="">
+                    </p> 
+                    <br>
+        
+                    <h3>Hvor lenge siden er din siste enhet?</h3>
+        
+                    <p>
+                        <label for="tid">Timer</label>
+                        <input id="tid" type="text" value="">
+                    </p> 
+                    <br>
+        
+                    <hr>
+        
+                    <button id="submit">Kalkuler</button>
+                    <button id="clear">Start på nytt</button>&nbsp&nbsp
+        
+                    <p>
+                    <label>Din promille er:</label>&nbsp&nbsp
+                    <span id="resultat"></span>
+                    </p>
+        
+                </div>		
+            </div>
+        
+        
+            <p>Ressurser:</p>
+            <button class="collapsible">Bilder:</button>
+            <div class="content">
+               <ul>
+                <li><a href="https://viken.no/nadderud-vgs/for-elever/apen-dag/">Bilde av Nadderud Vgs</a></li>
+                <li><a href="https://fontawesome.com">Ikoner</a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+
+
+ 
+
+<!-- =================== Footer ==================== -->
+<div id="footer">
+ <div class="over_footer">
+    <div class="footer">
+        <div class="u_footer">
+            <p>Nettside laget av</p>
+            <div class="footer_innhold">
+                    <ul class="footer_u_innhold">
+                        <li>Thorvald Veire</li>
+                        <li>2STE - Nadderud Vgs</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="u_footer">
+            <p>Addresse</p>
+            <div class="footer_innhold">
+                <p>Nadderud Vgs</p>
+                <p>Gjønnesjordet 30, 1357 Bekkestua</p>
+                <img src="../Bilder/misc/nadderud.jpg" alt="Nadderud-vgs" id="nadderud_bilde">
+            </div>
+        </div>
+
+        <div class="u_footer">
+            <p>Mer</p>
+            <div class="footer_innhold">
+                <ul class="footer_u_innhold">
+                    <li><a href="kilder.html">Kilder</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="understrek"></div>
+
+        <div class="footer_2">
+            <div class="u_footer_2">
+                <p>© Copyright 2023 Nadderud vgs. All Rights Reserved.
+                </p>
+
+            </div>
+        </div>
+  </div>
+</div>
+<!-- =================== /Footer ==================== -->
+ <script src="../javaScript/script.js"></script>
+ <script src="../javaScript/kalkulator.js"></script>
+</body>
+</html>
